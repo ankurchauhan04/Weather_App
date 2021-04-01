@@ -1,6 +1,7 @@
 <template>
   <v-container class="" fluid>
     <v-col cols="12">
+      <v-card-title class="justify-center display-4 font-weight-black white--text">Weatherify</v-card-title>
         <v-text-field
         v-model="city"
         class="mt-5"
@@ -8,6 +9,7 @@
         label="Search....."
         prepend-inner-icon="mdi-magnify"
         @keyup.enter="getWeatherData"
+        width="50%"
         ></v-text-field>
     </v-col>
     <div v-if="weather.weather && weather.weather.length">
